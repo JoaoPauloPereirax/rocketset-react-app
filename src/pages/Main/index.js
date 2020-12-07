@@ -24,7 +24,7 @@ export default class Main extends Component {
     };
 
     prevPage =()=>{
-        const {page,productInfo}=this.state;
+        const {page}=this.state;
 
         if(page===1) return;
         const pageNumber = page-1;
@@ -50,7 +50,7 @@ export default class Main extends Component {
                     <article key={prod._id}>
                         <strong>{prod.title}</strong>
                         <p>{prod.description}</p>
-                        <a href="">ACESSAR</a>
+                        <a href="https://breaking-bad-react-app.joaopaulopereirax.vercel.app/">ACESSAR</a>
                     </article>
                 ))}
 
