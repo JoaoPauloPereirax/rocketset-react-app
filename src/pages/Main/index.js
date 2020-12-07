@@ -30,9 +30,14 @@ export default class Main extends Component {
                     <article key={prod._id}>
                         <strong>{prod.title}</strong>
                         <p>{prod.description}</p>
-                        <a>Acessar</a>
+                        <a href="">ACESSAR</a>
                     </article>
                 ))}
+
+                <div className="actions">
+                    <button>Anterior</button>
+                    <button>Próximo</button>                    
+                </div>
             </div>
         )
     }
