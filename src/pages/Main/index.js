@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Api from '../../services/Api'
 import './styled.css'
+import {Link} from 'react-router-dom'
 
 
 export default class Main extends Component {
@@ -50,7 +51,7 @@ export default class Main extends Component {
                     <article key={prod._id}>
                         <strong>{prod.title}</strong>
                         <p>{prod.description}</p>
-                        <a href="https://breaking-bad-react-app.joaopaulopereirax.vercel.app/">ACESSAR</a>
+                        <Link to={`/products/${prod._id}`}>ACESSAR</Link>
                     </article>
                 ))}
 
